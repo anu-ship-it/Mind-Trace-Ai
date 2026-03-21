@@ -46,8 +46,23 @@ export default function Home() {
                 <br />
                 <input 
                     type="number"
-                    value={}
+                    value={activity}
+                    onChange={(e)=>setActivity(e.target.value)}
+                />    
             </div>
+
+            <div style={{marginTop:"20px"}}>
+                <label>Daily Journal</label>
+                <br/>
+                <textarea
+                    rows="4"
+                    cols="40"
+                    value={journal}
+                    onChange={(e)=>setJournal(e.target.value)}
+                />
+            </div>
+
+            
         </div>
     )
 }
