@@ -74,7 +74,7 @@ export default function Home() {
                     <h2>Risk Score: {result}</h2>
                 </div>
             )} 
-            
+
         </div>
     )
 }
