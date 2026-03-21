@@ -62,6 +62,18 @@ export default function Home() {
                 />
             </div>
 
+            <button
+              onClick={handleSubmit}
+              style={{marginTop:"20px"}}
+            >
+              Analyze Mental Health    
+            </button>
+
+            {result && (
+                <div style={{marginTop:"30px"}}>
+                    <h2>Risk Score: {result}</h2>
+                </div>
+            )} 
             
         </div>
     )
