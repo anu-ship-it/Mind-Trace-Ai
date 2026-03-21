@@ -43,6 +43,10 @@ export default function Home() {
             
             <div style={{marginTop:"20px"}}>
                 <label>Activity Level (1-10)</label>
+                <br />
+                <input 
+                    type="number"
+                    value={}
             </div>
         </div>
     )
