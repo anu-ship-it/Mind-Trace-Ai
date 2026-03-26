@@ -1,5 +1,3 @@
-# backend/utils.py
-
 def validate_input(data):
     """
     Ensure all required fields are present and valid

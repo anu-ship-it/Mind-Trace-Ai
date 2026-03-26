@@ -1,20 +1,11 @@
-import numpy as np
+from utils import validate_input, normalize_data, compute_behavior_score
 
 def predict_risk(data):
 
-    sleep = data["sleep_hours"]
-    activity = data["activity_level"]
-    sentiment = data["sentiment"]
+    validate_input(data)
 
-    risk = 0
+    normalized = normalize_data(data)
 
-    if sleep < 5:
-        risk += 30
+    score = compute_behavior_score(normalized)
 
-    if activity < 3:
-        risk += 30
-
-    if sentiment < 0:
-        risk += 40
-
-    return min(risk,100)
+    return score
